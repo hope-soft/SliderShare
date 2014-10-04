@@ -1,0 +1,31 @@
+<% include ../layout/header %>
+<div class=''>
+	<div class="container">
+	    <div class="top-buffer col-sm-6 col-sm-offset-3 panel panel-default">
+	      <h1><span class="fa fa-sign-in"></span> Login</h1>
+			<div class="panel-body">
+				<form method="POST">
+				  <legend>Reset Password
+				  	<hr>
+				    <input type="hidden" name="_csrf" value="<%= _csrf %>"/>
+				    <div class="form-group">
+				      <label for="password">New Password</label>
+				      <input type="password" name="password" value="" placeholder="New password" autofocus="autofocus" class="form-control"/>
+				    </div>
+				    <div class="form-group">
+				      <label for="confirm">Confirm Password</label>
+				      <input type="password" name="confirm" value="" placeholder="Confirm password" class="form-control"/>
+				    </div>
+				    <div class="form-group">
+				      <button type="submit" class="btn btn-primary btn-reset"><i class="fa fa-keyboard-o"></i>Change Password</button>
+				    </div>
+				  </legend>
+				</form>
+			  <hr>
+			  <p>Already have an account? <a href="/login">Login</a></p>
+			  <p>Or go <a href="/">home</a>.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<% include ../layout/footer %>

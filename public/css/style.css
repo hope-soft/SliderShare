@@ -1,0 +1,11 @@
+.mainContainer{
+	margin-top: 100px;
+}
+
+.navbar-nav > li > a#dropdownMenu {
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+.table-header-search{
+	margin-bottom: 10px;
+}

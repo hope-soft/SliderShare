@@ -1,0 +1,34 @@
+<% include ../layout/header %>
+<% include ../layout/menu %>
+<div class="container">
+	<div class='row'>
+		<a href="http://localhost:3000/campaign#/campaign/users" class='btn btn-primary'><i class='fa fa-backward'></i> Back Users </a>
+	</div>
+
+	<div class='row'>
+		<div class="panel panel-default">
+			<div class="panel-heading"><span class="fa fa-user"></span> <%= userDetail.name %> Info</div>
+		    <div class="panel-body">
+		    	<form action="/account/user/edit/" method="POST">
+			    	<input type="hidden" name="_csrf" value='<%= _csrf %>'/>
+			    	<input type="hidden" name="userId" value='<%= userDetail._id %>'/>
+					<div class="form-group">
+				        <label>Email: </label>
+				        <input type="text" value="<%= userDetail.email %>" class="form-control" name="email">
+				  	</div>
+				  	<div class="form-group">
+				        <label>New Password: </label>
+				        <input type="password" value="" class="form-control" name="password">
+				  	</div>
+				  	<div class="form-group">
+				        <label>Confirm Password: </label>
+				        <input type="password" value="" class="form-control" name="confirmPassword">
+				  	</div>
+				  	<hr>
+					<button type="submit" class="btn btn btn-primary"><span class="ion-locked"></span>Change Password</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<% include ../layout/footer %>

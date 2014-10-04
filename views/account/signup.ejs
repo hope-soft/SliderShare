@@ -1,0 +1,29 @@
+<% include ../layout/header %>
+<div class=''>
+  <div class="container">
+    <div class="col-sm-6 col-sm-offset-3 panel panel-default">
+      <h1><span class="fa fa-sign-in"></span> Signup</h1>
+        <form action="/signup" method="post" autocomplete='off'>
+          <input type='hidden' name='_csrf' value="<%= _csrf %>"/>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="confirmPassword">
+          </div>
+          
+          <button type="submit" class="btn btn-warning btn-lg"><span class="fa fa-user"></span>  Signup</button>
+        </form>
+      <hr>
+      <p>Already have an account? <a href="/login">Login</a></p>
+      <p>Or go <a href="/">home</a>.</p>
+    </div>
+  </div>
+</div>
+<% include ../layout/footer %>

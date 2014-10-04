@@ -1,0 +1,39 @@
+<html ng-app="dsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Share App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <% include layout/menu %>
+    <div class=''>
+      <div ng-view></div>
+    </div>
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+  <script src="lib/angular-animate.min.js"></script>
+  
+  <script src="app.js"></script>
+  <script src="services/login.js"></script>
+  <script src="controllers/login.js"></script>
+  <script src="controllers/users.js"></script>
+  <script src="services/users.js"></script> 
+
+  <script src="controllers/campaigns.js"></script>
+  <script src="services/campaigns.js"></script>  
+
+  <script src="controllers/index.js"></script>
+  <script src="services/index.js"></script>  
+
+  <script src="controllers/contact.js"></script>
+  <script src="services/contact.js"></script>  
+
+
+  </body>
+</html>
